@@ -1,5 +1,5 @@
 /* INFO: create database book_db;*/
-use book_db;
+/*use book_db;
 drop table book_data;
 CREATE TABLE book_data (
     book_id INT NOT NULL AUTO_INCREMENT,
@@ -17,18 +17,18 @@ CREATE TABLE book_data (
     image_url VARCHAR(1000),
     PRIMARY KEY (book_id)
 );
-use book_db;
+use book_db; */
 
 /* INFO: Add FullText for FullText Search */
 ALTER TABLE book_data ADD FULLTEXT(book_title, book_authors);
 
 /* INFO: Load csv to sql db - DOES NOT WORK IN MYSQL WORKBENCH DUE TO BUG
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.AnySource.html */
-LOAD DATA INFILE 'C:\Users\Jon\Documents\_Actual Documents\NYU Tandon\Big Data\ProjectData\book_data.csv' 
+/*LOAD DATA INFILE 'C:\Users\Jon\Documents\_Actual Documents\NYU Tandon\Big Data\ProjectData\book_data.csv' 
 INTO TABLE book_data 
 FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
+IGNORE 1 ROWS; */
 
 /* INFO: For AWS use MySQLImport instead in the command line
 Local MySQLImport command:
