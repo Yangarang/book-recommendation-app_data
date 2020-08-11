@@ -1,5 +1,3 @@
-Ken Bruen|Eoin Colfer|John Rickards|Ken Wignall|Laura Lippman|James O. Born|Sarah Weinman|Gary Phillips|Patrick J. Lambe|Duane Swierczynski|Craig McDonald|Pat Mullan|Reed Farrel Coleman|Peter Spiegelman|Jim Fusilli|Jason Starr|Charlie Stella|Ray Banks|Olen Steinhauer
-
 'GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES, INDEX, ALTER, SHOW DATABASES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER ON *.* TO `admin`@`%` WITH GRANT OPTION'
 Error Code: 1045. Access denied for user 'admin'@'%' (using password: YES)
 
@@ -80,14 +78,6 @@ server {
 }
 ---------------------------------
 
-/home/chris/webapp/
-            |- venv/
-            |- AWESOME_PROJECT/
-                |- awesome/
-                |- AWESOME/
-                   |- wsgi.py
-                   |- settings.py
-				   
 /home/ubuntu/
             |- venv/
 			|- env/
