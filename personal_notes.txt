@@ -12,12 +12,7 @@ mysqlimport --ignore-lines=1 --fields-optionally-enclosed-by="\"" --fields-termi
 
 mysqlimport --compress --local --host=book-database-1.cmmzkhfp8kbf.us-east-2.rds.amazonaws.com --user=admin --password --ignore-lines=1 --fields-optionally-enclosed-by="\"" --fields-terminated-by=, --verbose --local book_db book_data.csv
 
-https://stackoverflow.com/questions/39309714/how-do-i-multithread-sql-queries-in-python-such-that-i-obtain-the-results-of-all
-
 mysql -h book-database-1.cmmzkhfp8kbf.us-east-2.rds.amazonaws.com -P 3306 -u admin -p
-
-https://docs.djangoproject.com/en/dev/topics/db/sql/#django.db.models.Manager.raw
-https://github.com/twtrubiks/django-rest-framework-tutorial/blob/master/musics/models.py
 
 mysqldump -h localhost -u root -p --databases book_db > export_book_data.sql
 
